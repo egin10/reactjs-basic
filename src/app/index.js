@@ -4,6 +4,13 @@ import { render } from 'react-dom';
 import { Header } from './newComponents/Header';
 import { Content } from './newComponents/Content';
 import { TableRow } from './newComponents/TableRow';
+import { StateAPI } from "./newComponents/StateAPI";
+import { ForceUpdate } from "./newComponents/ForceUpdate";
+import { FindDOMNode } from "./newComponents/FindDOMNode";
+import { Form } from "./newComponents/Form";
+import { Events } from "./newComponents/Events";
+import { Refs } from "./newComponents/Refs";
+import { Keys } from "./newComponents/Keys";
 
 class App extends React.Component{
     constructor() {
@@ -43,6 +50,17 @@ class App extends React.Component{
                         {this.state.data.map((person, i) => <TableRow key={i} data={person} />)}
                     </tbody>                
                 </table>
+                <br/>
+                <StateAPI/>
+                <ForceUpdate/>
+                <FindDOMNode/>
+                <br/>
+                <Form/>
+                <br/>
+                <Events/>
+                <Refs/>
+                <br/>
+                <Keys/>
             </div>
         );
     }
