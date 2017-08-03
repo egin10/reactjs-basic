@@ -11,6 +11,7 @@ import { Form } from "./newComponents/Form";
 import { Events } from "./newComponents/Events";
 import { Refs } from "./newComponents/Refs";
 import { Keys } from "./newComponents/Keys";
+import { Routes } from "./newComponents/MainRoutes";
 
 class App extends React.Component{
     constructor() {
@@ -61,6 +62,7 @@ class App extends React.Component{
                 <Refs/>
                 <br/>
                 <Keys/>
+                <br/>
             </div>
         );
     }
